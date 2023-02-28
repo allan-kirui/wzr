@@ -31,6 +31,8 @@ long time_start = clock();
 // change to unicast xd
 multicast_net *multi_reciv;          // wsk do obiektu zajmujacego sie odbiorem komunikatow
 multicast_net *multi_send;           //   -||-  wysylaniem komunikatow
+unicast_net* uni_reciv;          // wsk do obiektu zajmujacego sie odbiorem komunikatow
+unicast_net* uni_send;
 
 HANDLE threadReciv;                  // uchwyt w¹tku odbioru komunikatów
 HWND main_window;                    // uchwyt do g³ównego okna programu 
@@ -108,6 +110,8 @@ void InteractionInitialisation()
 	// obiekty sieciowe typu multicast (z podaniem adresu WZR oraz numeru portu)
 	multi_reciv = new multicast_net("224.12.12.101", 10001);      // obiekt do odbioru ramek sieciowych
 	multi_send = new multicast_net("224.12.12.101", 10001);       // obiekt do wysy³ania ramek
+	uni_reciv = new unicast_net(10001);
+	uni_send = new unicast_net(10001);
 
 
 	// uruchomienie w¹tku obs³uguj¹cego odbiór komunikatów:
