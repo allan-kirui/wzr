@@ -98,6 +98,7 @@
     <ClCompile Include="quaternion.cpp" />
     <ClCompile Include="objects.cpp" />
     <ClCompile Include="net.cpp" />
+    <ClCompile Include="server.cpp" />
     <ClCompile Include="vector3D.cpp" />
   </ItemGroup>
   <ItemGroup>
