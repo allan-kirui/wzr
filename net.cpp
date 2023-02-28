@@ -170,7 +170,7 @@ unicast_net::unicast_net(unsigned short usPort)
 	udpServAddr.sin_addr.s_addr = htonl(INADDR_ANY); /* Any incoming interface */
 	udpServAddr.sin_port = usPort;      /* Local port */
 
-	if (bind(sock, (struct sockaddr *) &udpServAddr, sizeof(udpServAddr)) < 0)
+	if (bind(sock, (struct sockaddr*)&udpServAddr, sizeof(udpServAddr)) < 0)
 		DieWithError("bind() failed");
 	printf("OK\n");
 }

@@ -63,6 +63,7 @@ DWORD WINAPI ReceiveThreadFun(void *ptr)
 {
 	multicast_net *pmt_net = (multicast_net*)ptr;  // wskaünik do obiektu klasy multicast_net
 	Frame frame;
+	unsigned long IP_sender;
 
 	while (1)
 	{
