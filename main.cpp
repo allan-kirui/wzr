@@ -28,7 +28,7 @@ float avg_cycle_time;                // sredni czas pomiedzy dwoma kolejnymi cyk
 long time_of_cycle, number_of_cyc;   // zmienne pomocnicze potrzebne do obliczania avg_cycle_time
 long time_start = clock();
 
-// change to unicast
+// change to unicast xd
 multicast_net *multi_reciv;          // wsk do obiektu zajmujacego sie odbiorem komunikatow
 multicast_net *multi_send;           //   -||-  wysylaniem komunikatow
 
@@ -169,7 +169,7 @@ HDC g_context = NULL;        // uchwyt contextu graficznego
 
 
 
-//funkcja Main - dla Windows
+//funkcja Main - dla Windows s
 int WINAPI WinMain(HINSTANCE hInstance,
 	HINSTANCE hPrevInstance,
 	LPSTR     lpCmdLine,
